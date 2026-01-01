@@ -1,0 +1,16 @@
+
+{
+    "manifest_version": 3,
+    "name": "IP tracker",
+    "version": "1.0",
+    "description": "Retrieves the public IP address of the user",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "index.html"
+    },
+    "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["scripts.js"],
+      "css": ["styles.css"]
+    }]
+  }
